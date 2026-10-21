@@ -1541,3 +1541,11 @@ nav.links.open {
 .sponsors-track img:hover { opacity: 1; transform: scale(1.08); }
 
 
+
+/* GOOGLE TRANSLATE: ocultar barra y avisos de Google */
+.skiptranslate iframe,
+.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame { display: none !important; }
+body { top: 0 !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
