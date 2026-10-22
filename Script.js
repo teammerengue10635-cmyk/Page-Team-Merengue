@@ -227,7 +227,7 @@ document.addEventListener("click", function (event) {
   // =========================================
   const figuras = [
     {
-      imagen: 'img/EMBAJADORA DE LOS ESTADOS UNIDOS Y EL MINISTRO LUIS MIGUE DE CAMPS.jpg',
+      imagen: 'EMBAJADORA DE LOS ESTADOS UNIDOS Y EL MINISTRO LUIS MIGUE DE CAMPS.jpg',
       titulo: 'Embajadora de los Estados Unidos en República Dominicana',
       descripcion:
         'El viernes 18 de septiembre de 2026, en el marco de la ' +
@@ -239,7 +239,7 @@ document.addEventListener("click", function (event) {
         'y mostrarle nuestros proyectos.'
     },
     {
-      imagen: 'img/abraham1.jpg',
+      imagen: 'abraham1.jpg',
       titulo: 'Abraham Dauhajre',
       descripcion:
         'Tuvimos el honor y el placer de contar con el apoyo constante de Abraham Dauhajre, ' +
@@ -250,7 +250,7 @@ document.addEventListener("click", function (event) {
         'y la innovación ha sido un apoyo invaluable para nosotros.'
     },
     {
-      imagen: 'img/Ancell.jpg',
+      imagen: 'Ancell.jpg',
       titulo: 'Ancell Scheker',
       descripcion:
         'Tuvimos el honor y el placer de contar con la visita ' +
@@ -259,14 +259,14 @@ document.addEventListener("click", function (event) {
         'la cual estuvo viendo nuestros proyectos y conociendo más del equipo.'
     },
     {
-      imagen: 'img/Aileed decamps.jpg',
+      imagen: 'Aileed decamps.jpg',
       titulo: 'Aileen Decamps',
       descripcion:
         'Como equipo tuvimos el honor de tener la visita de la Regidora de Santo Domingo Este ' +
         'Aileen Decamps, la cual es nuestra madrina y siempre podemos contar con su apoyo.'
     },
     {
-      imagen: 'img/regidora2.jpg',
+      imagen: 'regidora2.jpg',
       titulo: 'Jehimy Esthefany Núñez Pérez',
       descripcion:
         'Tuvimos el honor de contar con su visita en nuestras instalaciones, ' +
@@ -294,7 +294,7 @@ document.addEventListener("click", function (event) {
   // =========================================
   const premios = [
     {
-      imagen: 'img/LOGROS.jpg',
+      imagen: 'LOGROS.jpg',
       titulo: 'Nuestros reconocimientos',
       descripcion:
         'Nuestros reconocimientos son una muestra del esfuerzo, la dedicación y el ' +
@@ -302,7 +302,7 @@ document.addEventListener("click", function (event) {
         'conjunto y nuestras ganas de seguir creciendo, superando desafíos y alcanzando nuevas metas.'
     },
     {
-      imagen: 'img/Stem For Everyone 2025.jpg',
+      imagen: 'Stem For Everyone 2025.jpg',
       titulo: 'Stem For Everyone',
       descripcion:
         'En nuestro primer año 2025 tuvimos el honor de poder obtener el Stem For Everyone, un reconocimiento ' +
@@ -311,7 +311,7 @@ document.addEventListener("click", function (event) {
         'la tecnología, la ingeniería y las matemáticas.'
     },
     {
-      imagen: 'img/Spirit Award 2026.jpg',
+      imagen: 'Spirit Award 2026.jpg',
       titulo: 'Team Spirit Award',
       descripcion:
         'En nuestro segundo año 2026, tuvimos el honor de poder obtener el Spirit Award, ' +
@@ -321,7 +321,7 @@ document.addEventListener("click", function (event) {
         'en que representamos los valores de FIRST, tanto dentro como fuera de la cancha.'
     },
     {
-      imagen: 'img/Stem For Everyone 2026.jpg',
+      imagen: 'Stem For Everyone 2026.jpg',
       titulo: 'Stem For Everyone',
       descripcion:
         'En nuestro segundo año 2026 pudimos obtener nuevamente el Stem For Everyone, un reconocimiento que ' +
