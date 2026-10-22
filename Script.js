@@ -83,8 +83,7 @@
       "google_translate_element"
     );
   };
-
-  // Solo cargamos Google Translate si hay un idioma distinto al original
+  
   if (idiomaActual() !== IDIOMA_ORIGINAL) {
     const gt = document.createElement("script");
     gt.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
@@ -392,7 +391,8 @@ document.addEventListener("click", function (event) {
         throw new Error('No pudimos enviar el mensaje. Inténtalo nuevamente.');
       })
       .catch((err) => {
-        // Error de red (sin internet, bloqueado, etc.)
+
+        
         if (err instanceof TypeError) throw new Error('No hay conexión. Revisa tu internet e inténtalo de nuevo.');
         throw err;
       });
@@ -570,7 +570,6 @@ document.addEventListener("click", function (event) {
       if (e.key === 'Escape') menu.open = false;
     });
 
-    // En PC el clic no debe cerrarlo justo después de abrirlo con el mouse
     const resumen = menu.querySelector('summary');
     if (resumen) {
       resumen.addEventListener('click', (e) => {
@@ -618,7 +617,7 @@ document.addEventListener("click", function (event) {
 
       if (!paused && setWidth) {
         x -= SPEED * dt;
-        if (-x >= setWidth) x += setWidth; // reinicio invisible
+        if (-x >= setWidth) x += setWidth;
         track.style.transform = 'translateX(' + x + 'px)';
       }
       requestAnimationFrame(tick);
@@ -631,7 +630,6 @@ document.addEventListener("click", function (event) {
 
     window.addEventListener('resize', build);
 
-    // Espera a que carguen las imágenes para medir bien los anchos
     const start = () => {
       build();
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
