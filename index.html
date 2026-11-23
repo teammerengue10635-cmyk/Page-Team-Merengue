@@ -2,13 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://translate.google.com https://translate.googleapis.com https://translate-pa.googleapis.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.gstatic.com https://translate.googleapis.com https://translate.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://flagcdn.com https://www.gstatic.com https://translate.google.com https://translate.googleapis.com https://www.google.com; connect-src 'self' https://api.web3forms.com https://translate.googleapis.com https://translate-pa.googleapis.com https://translate.google.com; frame-src https://translate.google.com https://translate.googleapis.com; form-action 'self' https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Team Merengue — Equipo de Robótica</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Team Merengue">
+    <link rel="manifest" href="favicon/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -19,8 +29,8 @@
     <div class="wrap nav-inner">
 
         <div class="brand">
-            <img class="brand-logo" src="ChatGPT Image 23 sept 2026, 11_31_50.png" alt="Team Merengue">
-            <span class="brand-text">Team<span class="dot" style="color:#285bc1">•</span>Merengue</span>
+            <img class="brand-logo" src="TEAM_LOGO.png" alt="Team Merengue">
+            <span class="brand-text">Team<span class="dot">•</span>Merengue</span>
         </div>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
@@ -41,6 +51,7 @@
                 </summary>
                 <ul class="submenu">
                     <li><a href="#nosotros">Quiénes somos</a></li>
+                    <li><a href="#first">¿Qué es FIRST?</a></li>
                     <li><a href="#vision">Visión</a></li>
                     <li><a href="#mision">Misión</a></li>
                     <li><a href="#valores">Valores</a></li>
@@ -62,45 +73,27 @@
                 </ul>
             </details>
 
-      
-            
-            
 <div class="language-menu">
-    <button
-        type="button"
-        class="language-button"
-        aria-label="Seleccionar idioma"
-        aria-expanded="false"
-        onclick="toggleLanguages(this)">
-
-        <span class="language-icon">🌐</span>
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20"/>
-            <path d="M12 2a15 15 0 0 1 0 20"/>
-            <path d="M12 2a15 15 0 0 0 0-20"/>
-        </svg>
-
-      
-        <span class="language-arrow">▾</span>
+    <button type="button" class="language-button" aria-label="Seleccionar idioma" aria-expanded="false" aria-haspopup="true">
+        <span class="language-icon" aria-hidden="true">🌐</span>
+        <span class="language-arrow" aria-hidden="true">▾</span>
     </button>
 
     <div class="language-dropdown">
-        <button type="button" onclick="changeLanguage('es')">🇩🇴 Español</button>
-        <button type="button" onclick="changeLanguage('en')">🇺🇸 English</button>
-        <button type="button" onclick="changeLanguage('pt')">🇧🇷 Português</button>
-        <button type="button" onclick="changeLanguage('fr')">🇫🇷 Français</button>
-        <button type="button" onclick="changeLanguage('tr')">🇹🇷 Türkçe</button>
-        <button type="button" onclick="changeLanguage('zh-CN')">🇨🇳 中文 — Mandarín</button>
-        <button type="button" onclick="changeLanguage('ar')">🇸🇦 العربية — Árabe</button>
+        <button type="button" data-lang="es">🇩🇴 Español</button>
+        <button type="button" data-lang="en">🇺🇸 English</button>
+        <button type="button" data-lang="pt">🇧🇷 Português</button>
+        <button type="button" data-lang="fr">🇫🇷 Français</button>
+        <button type="button" data-lang="tr">🇹🇷 Türkçe</button>
+        <button type="button" data-lang="zh-CN">🇨🇳 中文 — Mandarín</button>
+        <button type="button" data-lang="ar">🇸🇦 العربية — Árabe</button>
     </div>
 </div>
-
 
         </nav>
 
     </div>
 </header>
-
 
 <!-- INICIO -->
 <section id="inicio" class="hero" style="border-bottom: none; padding-bottom: 0;">
@@ -126,7 +119,7 @@
             </div>
 
             <div class="logo-mark">
-                <img src="ChatGPT Image 23 sept 2026, 11_31_50.png" alt="Logo de Team Merengue">
+                <img src="TEAM_LOGO.png" alt="Logo de Team Merengue">
             </div>
 
             <div class="hero-actions">
@@ -153,7 +146,7 @@
         <!-- Nosotros -->
         <div class="feature-block reveal">
             <div class="fb-art">
-                <img src="ft4.jpg" alt="Conoce quiénes somos" class="feature-image">
+                <img src="ft4.jpg" alt="Conoce quiénes somos" class="feature-image" loading="lazy" decoding="async">
             </div>
             <div class="fb-text">
                 <h3>Conoce quiénes somos</h3>
@@ -166,7 +159,7 @@
         <div class="feature-block reveal premios-card">
             <div class="fb-art premios-art">
                 <div class="premios-slider">
-                    <img id="premioImagen" src="LOGROS.jpg" alt="Premio obtenido de Team Merengue" class="feature-image premio-imagen">
+                    <img id="premioImagen" src="LOGROS.jpg" alt="Premio obtenido de Team Merengue" class="feature-image premio-imagen" loading="lazy" decoding="async">
                     <button type="button" class="premio-btn premio-prev" id="premioPrev" aria-label="Premio anterior">&#10094;</button>
                     <button type="button" class="premio-btn premio-next" id="premioNext" aria-label="Premio siguiente">&#10095;</button>
                 </div>
@@ -188,7 +181,7 @@
         <div class="feature-block reveal figuras-card">
             <div class="fb-art figuras-art">
                 <div class="figuras-slider">
-                    <img id="figuraImagen" src="EMBAJADORA DE LOS ESTADOS UNIDOS Y EL MINISTRO LUIS MIGUE DE CAMPS.jpg" alt="Figura importante de Team Merengue" class="figura-imagen">
+                    <img id="figuraImagen" src="EMBAJADORA DE LOS ESTADOS UNIDOS Y EL MINISTRO LUIS MIGUE DE CAMPS.jpg" alt="Figura importante de Team Merengue" class="figura-imagen" loading="lazy" decoding="async">
                     <button type="button" class="figura-btn figura-prev" id="figuraPrev" aria-label="Figura anterior">&#10094;</button>
                     <button type="button" class="figura-btn figura-next" id="figuraNext" aria-label="Figura siguiente">&#10095;</button>
                 </div>
@@ -215,7 +208,7 @@
         <!-- Prensa -->
         <div class="feature-block reveal">
             <div class="fb-art">
-                <img src="Mencionado.jpg" alt="Nos han mencionado en" class="feature-image">
+                <img src="Mencionado.jpg" alt="Nos han mencionado en" class="feature-image" loading="lazy" decoding="async">
             </div>
             <div class="fb-text">
                 <h3>Nos han mencionado en</h3>
@@ -227,7 +220,7 @@
         <!-- Donaciones -->
         <div class="feature-block reveal dona-card">
             <div class="fb-art">
-                <img src="participa o dona.jpg" alt="Participa o dona" class="feature-image">
+                <img src="participa o dona.jpg" alt="Participa o dona" class="feature-image" loading="lazy" decoding="async">
             </div>
             <div class="fb-text">
                 <h3>Dona o patrocina</h3>
@@ -239,19 +232,25 @@
     </div>
 </section>
 
-
 <!-- NOSOTROS -->
 <section id="nosotros">
     <div class="wrap">
 
-        <div class="section-head reveal">
-            <div class="kicker">Nosotros</div>
-            <h2>De escuelas públicas al escenario internacional</h2>
-            <p>
-                Team Merengue nació como la primera delegación de centros educativos
-                públicos dominicanos en competir en la FIRST Robotics Competition,
-                uno de los torneos de robótica estudiantil más grandes del mundo.
-            </p>
+        <div class="about-top">
+            <div class="section-head reveal">
+                <div class="kicker">Nosotros</div>
+                <h2>De escuelas públicas al escenario internacional</h2>
+                <p>
+                    Team Merengue nació como la primera delegación de centros educativos
+                    públicos dominicanos en competir en la FIRST Robotics Competition,
+                    uno de los torneos de robótica estudiantil más grandes del mundo.
+                </p>
+            </div>
+
+            <!-- Imagen con borde difuminado y flotando. Cambia TEAM_LOGO.png por la imagen que quieras -->
+            <div class="about-float reveal">
+                <img src="TEAM_LOGO.png" alt="Team Merengue" class="about-float-img" loading="lazy" decoding="async">
+            </div>
         </div>
 
         <div class="about-grid">
@@ -275,7 +274,7 @@
             <div class="stat-grid reveal">
                 <div class="stat"><div class="num">15</div><div class="cap">Estudiantes en la delegación 2025</div></div>
                 <div class="stat"><div class="num">15</div><div class="cap">Estudiantes en la delegación 2026</div></div>
-                <div class="stat"><div class="num">2025</div><div class="cap">Primera participación en FRC</div></div>
+                <div class="stat"><div class="num">2025</div><div class="cap">Primera participación</div></div>
                 <div class="stat"><div class="num">2026</div><div class="cap">Segunda participación, Miami</div></div>
             </div>
 
@@ -326,22 +325,22 @@
             <div class="schools-grid">
 
                 <div class="school-item">
-                    <img src="salesiano hainamos.jpg" alt="Logo Politécnico Salesiano Hainamosa" class="school-logo">
+                    <img src="salesiano hainamos.jpg" alt="Logo Politécnico Salesiano Hainamosa" class="school-logo" loading="lazy" decoding="async">
                     Instituto Politécnico Salesiano Hainamosa
                 </div>
 
                 <div class="school-item">
-                    <img src="itfam.jpg" alt="Logo Instituto Tecnológico Fabio Amable Mota" class="school-logo">
+                    <img src="itfam.jpg" alt="Logo Instituto Tecnológico Fabio Amable Mota" class="school-logo" loading="lazy" decoding="async">
                     Instituto Tecnológico Fabio Amable Mota
                 </div>
 
                 <div class="school-item">
-                    <img src="celeste beltre melo.png" alt="Logo Politécnico Celeste Argentina Beltré Melo" class="school-logo">
+                    <img src="celeste beltre melo.png" alt="Logo Politécnico Celeste Argentina Beltré Melo" class="school-logo" loading="lazy" decoding="async">
                     Politécnico Celeste Argentina Beltré Melo
                 </div>
 
                 <div class="school-item">
-                    <img src="liduvina.jpg" alt="Logo Centro de Excelencia Profesora Liduvina Cornelio" class="school-logo">
+                    <img src="liduvina.jpg" alt="Logo Centro de Excelencia Profesora Liduvina Cornelio" class="school-logo" loading="lazy" decoding="async">
                     Centro de Excelencia Profesora Liduvina Cornelio
                 </div>
 
@@ -351,6 +350,87 @@
     </div>
 </section>
 
+<!-- QUÉ ES FIRST -->
+<section id="first">
+    <div class="wrap">
+
+        <div class="first-top">
+            <div class="section-head reveal">
+                <div class="kicker">FIRST</div>
+                <h2>¿Qué es FIRST?</h2>
+                <p>
+                    FIRST (For Inspiration and Recognition of Science and Technology) es una organización
+                    sin fines de lucro fundada en 1989 para inspirar a niños y jóvenes en la ciencia y la
+                    tecnología. Sus programas, que van desde kínder hasta el último año de secundaria,
+                    combinan robótica, trabajo en equipo y mentoría.
+                </p>
+            </div>
+
+            <!-- LOGO DE FIRST: cambia TEAM_LOGO.png por tu imagen (ej. FIRST_LOGO.png) -->
+            <div class="first-logo reveal">
+                <img src="TEAM_LOGO.png" alt="Logo de FIRST" loading="lazy" decoding="async">
+            </div>
+        </div>
+
+        <div class="first-grid">
+
+            <article class="first-card reveal" id="frc">
+                <!-- IMAGEN FRC: cambia TEAM_LOGO.png por tu imagen (ej. FRC.jpg) -->
+                <div class="first-media">
+                    <img src="R.jpg" alt="FIRST Robotics Competition (FRC)" loading="lazy" decoding="async">
+                </div>
+                <span class="first-badge">FRC</span>
+                <h3>FIRST Robotics Competition</h3>
+                <div class="first-meta">
+                    <span>Edades 14–18</span>
+                    <span>Grados 9–12</span>
+                </div>
+                <p>
+                    Equipos de secundaria diseñan, programan y construyen un robot de tamaño industrial
+                    a partir de un kit de piezas y un reglamento común, para competir en un juego
+                    temático que cambia cada año.
+                </p>
+                <ul class="first-points">
+                    <li>Un nuevo reto cada enero</li>
+                    <li>Partidos por alianzas entre equipos</li>
+                    <li>Mentoría de ingenieros y docentes</li>
+                </ul>
+                <a href="#equipo" class="first-link">Aquí compite Team Merengue →</a>
+            </article>
+
+            <article class="first-card reveal" id="fll">
+                <!-- IMAGEN FLL: cambia TEAM_LOGO.png por tu imagen (ej. FLL.jpg) -->
+                <div class="first-media">
+                    <img src="first-lego-league-logo-png_seeklogo-244534.png" alt="FIRST LEGO League (FLL)" loading="lazy" decoding="async">
+                </div>
+                <span class="first-badge first-badge-blue">FLL</span>
+                <h3>FIRST LEGO League</h3>
+                <div class="first-meta">
+                    <span>Edades 5–16*</span>
+                    <span>Grados K–8</span>
+                </div>
+                <p>
+                    Programa que introduce a niños y adolescentes a la ciencia y la tecnología. Los
+                    equipos investigan un problema real, construyen y programan un robot con piezas
+                    LEGO y presentan su solución.
+                </p>
+                <ul class="first-points">
+                    <li>Tres divisiones: Discover, Explore y Challenge</li>
+                    <li>Basado en los valores FIRST: trabajo en equipo, descubrimiento e innovación</li>
+                    <li>Un reto temático nuevo cada temporada</li>
+                </ul>
+                <a href="#team-merenguito" class="first-link">Conoce a Team Merenguito FLL →</a>
+            </article>
+
+        </div>
+
+        <p class="first-note reveal">
+            *Las edades varían según el país. FIRST también ofrece FIRST Tech Challenge (FTC),
+            para estudiantes de grados 7 a 12.
+        </p>
+
+    </div>
+</section>
 
 <!-- EQUIPO -->
 <section id="equipo">
@@ -410,7 +490,6 @@
     </div>
 </section>
 
-
 <!-- TEAM MERENGUITO FLL -->
 <section id="team-merenguito" class="team-merenguito-section">
     <div class="wrap">
@@ -430,7 +509,7 @@
 
             <div class="merenguito-card">
                 <div class="merenguito-image-wrap">
-                    <img src="fll.jpg" alt="Team Merenguito FLL" class="merenguito-image">
+                    <img src="fll.jpg" alt="Team Merenguito FLL" class="merenguito-image" loading="lazy" decoding="async">
                 </div>
                 <div class="merenguito-card-body">
                     <span class="kicker">Team Merenguito FLL</span>
@@ -473,7 +552,7 @@
 
             <div class="merenguito-card merenguito-award-card">
                 <div class="merenguito-image-wrap">
-                    <img src="premio y reconocimiento.jpg" alt="Premios obtenidos por Team Merenguito FLL" class="merenguito-image">
+                    <img src="premio y reconocimiento.jpg" alt="Premios obtenidos por Team Merenguito FLL" class="merenguito-image" loading="lazy" decoding="async">
                 </div>
                 <div class="merenguito-card-body">
                     <span class="kicker">Premios obtenidos</span>
@@ -485,7 +564,6 @@
 
     </div>
 </section>
-
 
 <!-- LOGROS -->
 <section id="logros">
@@ -526,7 +604,6 @@
     </div>
 </section>
 
-
 <!-- PRENSA -->
 <section id="prensa">
     <div class="wrap">
@@ -539,28 +616,28 @@
 
         <div class="press-grid">
 
-            <a class="press-card reveal" href="https://proceso.com.do/2026/04/12/estudiantes-dominicanos-reciben-reconocimiento-team-spirit-award-en-first-robotics-competition-2026/" target="_blank" rel="noopener">
+            <a class="press-card reveal" href="https://proceso.com.do/2026/04/12/estudiantes-dominicanos-reciben-reconocimiento-team-spirit-award-en-first-robotics-competition-2026/" target="_blank" rel="noopener noreferrer">
                 <div class="src">Proceso.com.do — abril 2026</div>
                 <h3>Team Merengue gana el Team Spirit Award en la FRC 2026</h3>
                 <p>Cobertura del reconocimiento obtenido en el Watsco Center, University of Miami.</p>
                 <span class="go">Leer la noticia →</span>
             </a>
 
-            <a class="press-card reveal" href="https://www.ministeriodeeducacion.gob.do/comunicaciones/noticias/ministerio-de-educacion-destaca-reconocimiento-internacional-a-team-merengue-en-la-frc-2026-por-su-espiritu-de-equipo" target="_blank" rel="noopener">
+            <a class="press-card reveal" href="https://www.ministeriodeeducacion.gob.do/comunicaciones/noticias/ministerio-de-educacion-destaca-reconocimiento-internacional-a-team-merengue-en-la-frc-2026-por-su-espiritu-de-equipo" target="_blank" rel="noopener noreferrer">
                 <div class="src">Ministerio de Educación (MINERD)</div>
                 <h3>El MINERD destaca el reconocimiento a Team Merengue</h3>
                 <p>Comunicado oficial sobre el Team Spirit Award y el rol de la Regional 10 de Educación.</p>
                 <span class="go">Leer la noticia →</span>
             </a>
 
-            <a class="press-card reveal" href="https://hoy.com.do/vivir/robot-juega-baloncesto-historia-team-merengue-salio-escuelas-publicas-dominicanas_1081232.html" target="_blank" rel="noopener">
+            <a class="press-card reveal" href="https://hoy.com.do/vivir/robot-juega-baloncesto-historia-team-merengue-salio-escuelas-publicas-dominicanas_1081232.html" target="_blank" rel="noopener noreferrer">
                 <div class="src">Hoy Digital</div>
                 <h3>La historia del Team Merengue, salido de escuelas públicas</h3>
                 <p>Un reportaje sobre el origen del equipo y cómo estudiantes de distintas áreas encontraron su lugar en él.</p>
                 <span class="go">Leer la noticia →</span>
             </a>
 
-            <a class="press-card reveal" href="https://presidencia.gob.do/noticias/ministerio-de-educacion-y-alcaldia-de-santo-domingo-este-respaldan-talento-estudiantil-en" target="_blank" rel="noopener">
+            <a class="press-card reveal" href="https://presidencia.gob.do/noticias/ministerio-de-educacion-y-alcaldia-de-santo-domingo-este-respaldan-talento-estudiantil-en" target="_blank" rel="noopener noreferrer">
                 <div class="src">Presidencia de la República Dominicana</div>
                 <h3>MINERD y ASDE respaldan a la delegación 2025</h3>
                 <p>Detalles sobre el apoyo institucional recibido por Team Merengue para su primera participación.</p>
@@ -609,44 +686,70 @@
             <p style="margin-left:auto;margin-right:auto;">Ayúdanos a seguir inspirando a las demás generaciones.</p>
         </div>
 
-        <form id="sponsorForm" class="reveal" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <form id="sponsorForm" class="reveal" method="post" novalidate>
 
             <!-- Web3Forms -->
-            <input type="hidden" name="access_key" value="2a3180ba-1748-4878-b2bc-6585d93ec0a7">
-            <input type="hidden" name="subject" value="Nueva solicitud de patrocinio / donación - Team Merengue">
-            <input type="hidden" name="from_name" value="Web Team Merengue - Patrocinios">
-            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
             <div class="field-row">
                 <div class="field" id="f-nombre">
                     <label for="s-nombre">Nombre completo <span class="req">*</span></label>
-                    <input type="text" id="s-nombre" name="name" placeholder="Ej. Juan Pérez">
+                    <input type="text" id="s-nombre" name="name" maxlength="80" autocomplete="name" placeholder="Ej. Juan Pérez">
                     <div class="error-msg">Por favor escribe tu nombre.</div>
                 </div>
 
-
                 <div class="field" id="f-empresa">
-                    <label for="s-empresa">Empresa u organización</label>
-                    <input type="text" id="s-empresa" name="empresa" placeholder="Opcional">
+                    <label for="s-empresa">Empresa u organización <span class="req">*</span></label>
+                    <input type="text" id="s-empresa" name="empresa" maxlength="100" autocomplete="organization" placeholder="Nombre de tu empresa u organización">
+                    <div class="error-msg">Escribe tu empresa u organización.</div>
                 </div>
             </div>
 
             <div class="field-row">
                 <div class="field" id="f-correo">
                     <label for="s-correo">Correo electrónico <span class="req">*</span></label>
-                    <input type="email" id="s-correo" name="email" placeholder="tucorreo@ejemplo.com">
+                    <input type="email" id="s-correo" name="email" maxlength="254" autocomplete="email" inputmode="email" placeholder="tucorreo@ejemplo.com">
                     <div class="error-msg">Ingresa un correo válido.</div>
                 </div>
 
                 <div class="field" id="f-telefono">
-                    <label for="s-telefono">Teléfono</label>
-                    <input type="tel" id="s-telefono" name="telefono" placeholder="(809) 000-0000">
+                    <label for="s-telefono">Teléfono <span class="req">*</span></label>
+
+                    <div class="phone-field">
+                        <div class="country-select" id="countrySelect">
+                            <button type="button" class="country-btn" id="countryBtn"
+                                    aria-haspopup="listbox" aria-expanded="false" aria-controls="countryList"
+                                    aria-label="País del teléfono">
+                                <span class="flag" id="countryFlag" aria-hidden="true"></span>
+                                <span class="dial" id="countryDial">+1</span>
+                                <span class="caret" aria-hidden="true">▾</span>
+                            </button>
+
+                            <div class="country-panel" id="countryPanel" hidden>
+                                <input type="search" id="countrySearch" class="country-search"
+                                       placeholder="Buscar país o código" maxlength="30"
+                                       autocomplete="off" spellcheck="false"
+                                       role="combobox" aria-expanded="true" aria-controls="countryList"
+                                       aria-label="Buscar país o código">
+                                <ul id="countryList" class="country-list" role="listbox" aria-label="Países"></ul>
+                            </div>
+                        </div>
+
+                        <input type="tel" id="s-telefono" class="phone-input" maxlength="24"
+                               inputmode="tel" autocomplete="tel-national" placeholder="809 000 0000">
+                    </div>
+
+                    <!-- Valores finales que se envían (los llena Script.js) -->
+                    <input type="hidden" name="telefono" id="s-telefono-full">
+                    <input type="hidden" name="pais_telefono" id="s-telefono-pais">
+
+                    <div class="error-msg" id="s-telefono-error">Ingresa un teléfono válido.</div>
                 </div>
             </div>
 
             <div class="field" id="f-tipo">
-                <label>Deseo hacer <span class="req">*</span></label>
-                <div class="radio-group" id="tipoGroup">
+                <span class="field-label" id="tipo-label">Deseo hacer <span class="req">*</span></span>
+                <div class="radio-group" id="tipoGroup" role="radiogroup" aria-labelledby="tipo-label">
                     <label class="radio-pill"><input type="radio" name="tipo" value="Donación"> Donación</label>
                     <label class="radio-pill"><input type="radio" name="tipo" value="Patrocinio"> Patrocinio</label>
                     <label class="radio-pill"><input type="radio" name="tipo" value="Voluntariado"> Voluntariado</label>
@@ -654,18 +757,19 @@
                 <div class="error-msg">Selecciona una opción.</div>
             </div>
 
-            <div class="field">
-                <label for="s-mensaje">Mensaje</label>
+            <div class="field" id="f-mensaje">
+                <label for="s-mensaje">Mensaje <span class="req">*</span></label>
                 <textarea id="s-mensaje" name="message" maxlength="500" placeholder="Cuéntanos cómo te gustaría apoyar a Team Merengue"></textarea>
+                <div class="error-msg">Escribe tu mensaje.</div>
             </div>
 
+            <p class="privacy-note">Usaremos tus datos solo para responderte sobre tu solicitud.</p>
             <button type="submit" class="btn btn-primary submit-btn">Enviar solicitud</button>
             <div id="formStatus" role="status"></div>
 
         </form>
     </div>
 </section>
-
 
 <!-- CONTACTO -->
 <section id="contacto" style="border-bottom: none;">
@@ -692,7 +796,9 @@
 
                         <div>
                             <h3>Sede de entrenamiento</h3>
-                            <p>Instituto Tecnológico Fabio Amable Mota, Santo Domingo Este</p>
+                            <p>CIIA (Centro de Investigación e Innovación Avanzada)
+
+Fabio Amable Mota, Santo Domingo Este.</p>
                         </div>
                     </div>
 
@@ -706,7 +812,7 @@
                         </div>
                         <div>
                             <h3>Instagram</h3>
-                            <a href="https://www.instagram.com/team_merengue10635/" target="_blank" rel="noopener">@teammerengue10635 →</a>
+                            <a href="https://www.instagram.com/team_merengue10635/" target="_blank" rel="noopener noreferrer">@teammerengue10635 →</a>
                         </div>
                     </div>
 
@@ -726,23 +832,20 @@
                 </div>
             </div>
 
-            <form id="contactForm" class="reveal" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <form id="contactForm" class="reveal" method="post" novalidate>
 
             <!-- Web3Forms -->
-            <input type="hidden" name="access_key" value="2a3180ba-1748-4878-b2bc-6585d93ec0a7">
-            <input type="hidden" name="subject" value="Nuevo mensaje de contacto - Team Merengue">
-            <input type="hidden" name="from_name" value="Web Team Merengue - Contacto">
-            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
                 <div class="field" id="c-nombre">
                     <label for="c-name">Nombre <span class="req">*</span></label>
-                    <input type="text" id="c-name" name="name" placeholder="Tu nombre">
+                    <input type="text" id="c-name" name="name" maxlength="80" autocomplete="name" placeholder="Tu nombre">
                     <div class="error-msg">Por favor escribe tu nombre.</div>
                 </div>
 
                 <div class="field" id="c-correo">
                     <label for="c-mail">Correo electrónico <span class="req">*</span></label>
-                    <input type="email" id="c-mail" name="email" placeholder="tucorreo@ejemplo.com">
+                    <input type="email" id="c-mail" name="email" maxlength="254" autocomplete="email" inputmode="email" placeholder="tucorreo@ejemplo.com">
                     <div class="error-msg">Ingresa un correo válido.</div>
                 </div>
 
@@ -752,6 +855,7 @@
                     <div class="error-msg">Escribe tu mensaje.</div>
                 </div>
 
+                <p class="privacy-note">Usaremos tus datos solo para responderte.</p>
                 <button type="submit" class="btn btn-primary submit-btn">Enviar mensaje</button>
                 <div id="contactStatus" role="status"></div>
 
@@ -760,14 +864,11 @@
     </div>
 </section>
 
-
-
 <footer>
     <div class="footer-inner">
-        <div class="brand">Team<span class="dot" style="color:#285bc1">•</span>Merengue</div>
+        <div class="brand">Team<span class="dot">•</span>Merengue</div>
         <p>© 2026 Team Merengue. Santo Domingo Este, República Dominicana.</p>
-        <p>Lizmeiry Bueno •Diseño y desarrollo web • </p>
-        <p>Jeremy Rosario •Diseño y seguridad • </p>
+       
     </div>
 </footer>
 
